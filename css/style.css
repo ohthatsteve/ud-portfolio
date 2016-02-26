@@ -1,0 +1,193 @@
+body,
+article,
+section,{
+	margin: 0;
+}
+.container{
+	padding: 0;
+}
+
+h1,
+h2,
+h3{
+	font-family: 'Quicksand', sans-serif;
+}
+/*************************************
+*              Header
+*************************************/
+
+#header{
+	height: 230px;
+	text-align: center;
+}
+
+#header_img{
+	padding: 3px;
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255, 0.7);
+	border-radius: 100%;
+}
+
+#header_name{
+	font-size: 2.25em;
+}
+
+#header_role{
+	margin-top: 0;
+	font-size: 1.5em;
+	color: #3c3f56;
+}
+
+/*************************************
+*			Hero
+*************************************/
+
+#hero{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -1;
+	opacity: .5;
+	width: 100%;
+	height: 240px;
+	overflow: hidden;
+	margin: 0;
+
+}
+
+#hero_img{
+	opacity: .75;
+	padding: 0;
+	margin: 0;
+	background-size: contain;
+}
+/*************************************
+*            Featured
+*************************************/
+#featured_header{
+	color: #508c44;
+	margin-top: 20px;
+	font-size: 2.5em;
+}
+
+.app{
+	margin-top: 10px;
+	border-bottom: 1px solid lightgrey;
+	text-align: center;
+	padding-bottom: 10px;
+
+}
+
+.app:last-of-type{
+	border-bottom: none;
+}
+
+.app_name{
+	font-size: 2em;
+	color: #3c3f56;
+}
+
+.app_img{
+	height: 250px;
+}
+
+.app_info{
+	margin-bottom: 15px;
+	font-size: 1.2em;
+}
+
+.app_url{
+	text-decoration: none;
+	color: #508c44;
+}
+
+.long{
+	display: none;
+}
+/*************************************
+*            Footer
+*************************************/
+footer{
+	margin-top: 20px;
+	text-align: center;
+}
+/*************************************
+*          Media Query
+*************************************/
+@media screen and (min-width: 768px){
+	#header{
+		border-bottom: 10px double #3c3f56;
+		margin-bottom: 10px;
+	}
+
+	#header_text{
+		text-align: right;
+	}
+
+	#header_role,
+	#header_name{
+		font-weight: lighter;
+	}
+
+	#header_name{
+		font-size: 4em;
+		color: #508c44;
+	}
+
+	#header_role{
+		font-size: 2.5em;
+		color: #3c3f56;
+	}
+
+	#hero{
+		position: relative;
+		opacity: 1;
+		height: auto;
+		background-color: navy;
+	}
+
+	#hero_img{
+		opacity: 0.7;
+	}
+
+	.app{
+		border-bottom: none;
+		border-right: 1px solid lightgrey;
+		transition: background-color 1.5s;
+		-webkit-transition: background-color 1.5s;
+	}
+
+	.app:hover{
+		background-color: #6cd;
+	}
+
+	.app:last-of-type{
+		border-right: none;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.short{
+		display: none;
+	}
+
+	.long{
+		display: block;
+	}
+
+	#header_name{
+		font-size: 5em;
+	}
+
+	#header_role{
+		font-size: 3.75em;
+	}
+
+	#featured_header{
+		font-size: 3.5em;
+	}
+
+	.app_info{
+		height: 180px;
+	}
+}
